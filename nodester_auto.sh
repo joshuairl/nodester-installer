@@ -76,15 +76,15 @@ case $whoami in
     echo "'----------------------------------------------------------'";
     echo ${NOCOLR}
     sleep 1;
-    apt-get update
+    yum update
     
     echo ${BLDCYA};
     echo ".----------------------------------------------------------.";
-    echo "| Updgrading outstanding apt-get updates                   |";
+    echo "| Updgrading outstanding yum updates                   |";
     echo "'----------------------------------------------------------'";
     echo ${NOCOLR}
     sleep 1;
-    apt-get upgrade
+    yum upgrade
 
     echo ${BLDCYA};
     echo ".----------------------------------------------------------.";
@@ -92,16 +92,16 @@ case $whoami in
     echo "'----------------------------------------------------------'";
     echo ${NOCOLR}
     sleep 1;
-    apt-get remove apache2
+    yum remove apache2
     update-rc.d -f apache2 remove
 
     echo ${BLDCYA};
     echo ".----------------------------------------------------------.";
-    echo "| Installing apt-get packages                              |";
+    echo "| Installing yum packages                              |";
     echo "'----------------------------------------------------------'";
     echo ${NOCOLR}
     sleep 1;
-    apt-get install git-core curl build-essential openssl libssl-dev psmisc couchdb htop redis-server
+    yum install git-core curl build-essential openssl libssl-dev psmisc couchdb htop redis-server
 
     #echo ${BLDCYA};
     #echo ".----------------------------------------------------------.";

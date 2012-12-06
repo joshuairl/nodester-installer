@@ -167,7 +167,7 @@ case $whoami in
     echo ${NOCOLR}
     sleep 1;
     cd ~/build
-    git clone https://github.com/alejandromg/n.git
+    git clone https://github.com/alejandro/n.git
     cd n && make install
 
     echo ${BLDCYA};
